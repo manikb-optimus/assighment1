@@ -1,0 +1,60 @@
+﻿<Window x:Class="SampleApp.Views.StudentDetail"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:local="clr-namespace:SampleApp.Views"
+        mc:Ignorable="d"
+              DataContext="{Binding Source={StaticResource mainViewModelLocator},  Path=StudentDetailViewModel}"
+        Title="StudentDetail" Height="450" Width="800">
+    <ScrollViewer>
+
+        <Grid Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+                <RowDefinition Height="30"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="2" Content="Id" FontWeight="Bold"></Label>
+            <Label Grid.Row="3" Content="Student Name" FontWeight="Bold" VerticalAlignment="Center"></Label>
+            <Label Grid.Row="4" Content="Email Address" FontWeight="Bold"></Label>
+            <Label Grid.Row="5" Content="Contact Number" FontWeight="Bold"></Label>
+            <Label Grid.Row="6" Content="Date Of Birth" FontWeight="Bold"></Label>
+
+            <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding SelectedStudent.StudentId, Mode=TwoWay}" AcceptsReturn="True" Height="75"></TextBox>
+            <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding SelectedStudent.StudentName, Mode=TwoWay}"></TextBox>
+            <TextBox Grid.Row="4" Grid.Column="1" Text="{Binding SelectedStudent.EmailAddress, Mode=TwoWay}"></TextBox>
+            <TextBox Grid.Row="5" Grid.Column="1" Text="{Binding SelectedStudent.ContactNumber, Mode=TwoWay}"></TextBox>
+            <TextBox Grid.Row="6" Grid.Column="1" Text="{Binding SelectedStudent.DateOfBirth, Mode=TwoWay, FallbackValue='NA'}"></TextBox>
+
+            <StackPanel Grid.Row="9" Orientation="Horizontal" Grid.ColumnSpan="2">
+                <Button Margin="5" Content="Save Details">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding SaveCommand}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+                <Button Margin="5" Content="Delete Details">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Click">
+                            <i:InvokeCommandAction Command="{Binding DeleteCommand}"/>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                </Button>
+            </StackPanel>
+
+        </Grid>
+    </ScrollViewer>
+</Window>

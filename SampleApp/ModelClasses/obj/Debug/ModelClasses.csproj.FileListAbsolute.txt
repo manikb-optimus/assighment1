@@ -1,0 +1,6 @@
+C:\SampleWPFApplication\SampleApp\ModelClasses\bin\Debug\ModelClasses.dll
+C:\SampleWPFApplication\SampleApp\ModelClasses\bin\Debug\ModelClasses.pdb
+C:\SampleWPFApplication\SampleApp\ModelClasses\obj\Debug\ModelClasses.csprojAssemblyReference.cache
+C:\SampleWPFApplication\SampleApp\ModelClasses\obj\Debug\ModelClasses.csproj.CoreCompileInputs.cache
+C:\SampleWPFApplication\SampleApp\ModelClasses\obj\Debug\ModelClasses.dll
+C:\SampleWPFApplication\SampleApp\ModelClasses\obj\Debug\ModelClasses.pdb

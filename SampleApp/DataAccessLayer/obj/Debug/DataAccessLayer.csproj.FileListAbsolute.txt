@@ -1,0 +1,9 @@
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\bin\Debug\ModelClasses.dll
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\bin\Debug\ModelClasses.pdb
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\SampleWPFApplication\SampleApp\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
